@@ -3,8 +3,10 @@
 
 :root{
   --primary-white: #fff;
-  --primary-accent: #088dca;
+  --primary-accent: #ca0818;
   --primary-dark: rgba(255,255,255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body{
@@ -13,10 +15,14 @@ body{
 
 
 /*     Navbar   */
+nav{
+  z-index: 2;
+}
 .logo{
   width: 4rem;
   height: 4rem;
   border-radius:3rem;
+  object-fit: cover;
 }
  
 /*     Navbar links   */
@@ -49,48 +55,68 @@ nav ul li{
 }
 
 
+/*     Header   */
 
-
-
-
-
-
-
-.App {
-  text-align: center;
+.header-wrapper{
+  position:relative;
+  background: url(me.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.main-info{
+  display:flex;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main-info h1 {
+  color: var(--primary-accent);
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*     Typer   */
+
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+
+
+/*     header main offer button  */
+
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius:0;
+  padding: 0.625rem .75rem .75rem .75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out
+}
+
+
+/*     paricles */
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+  z-index: 1 ;
 }
