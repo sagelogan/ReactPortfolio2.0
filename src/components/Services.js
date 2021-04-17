@@ -6,7 +6,7 @@ const Services = () => {
             <div className="py-5">
                 <div className="container">
                     <div className="row">
-
+                        
                         <div className="col-md-3 col-sm-6">
                             <div className="box">
                                 <h3>Web Development</h3>
@@ -31,7 +31,7 @@ const Services = () => {
                         <div className="col-md-3 col-sm-6">
                             <div className="box">
                                 <h3>Event Production</h3>
-                                <p>My work at The Range has prepared me for small and big events alike.</p>
+                                <p>My work at The Range has prepared me for producing small and big events alike.</p>
                             </div>
                         </div>
 

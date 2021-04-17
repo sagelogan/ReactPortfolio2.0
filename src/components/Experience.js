@@ -42,7 +42,7 @@ const Experience = () => {
                         <h3>2020</h3>
                         <p><ul>
                                 <li>
-                                    Developed Lyfe Here, a platform dedicated to local business growth and exposure online.
+                                    Began developing Lyfe Here, a platform dedicated to local business growth and exposure online.
                                 </li>
                             </ul>
                         </p>
